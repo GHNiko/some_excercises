@@ -22,14 +22,9 @@ public class IntegrationApplication implements CommandLineRunner {
 
     @Override
     public void run(String... args) throws Exception {
-        todoRepository.save(new ToDo("daily task", false, false));
-        todoRepository.save(new ToDo("make the beds", true, true));
-        todoRepository.save(new ToDo("do the washing up", true, false));
-        todoRepository.save(new ToDo("clean the bathroom and the kitchen.", true, true));
-        todoRepository.save(new ToDo("sweep the floor", true, true));
-        todoRepository.save(new ToDo("wash the floors", true, false));
-        todoRepository.save(new ToDo("vacuum the carpet", false, false));
-        todoRepository.save(new ToDo("dust the furniture", false, true));
-        todoRepository.save(new ToDo("tidy up", false, true));
+        todoRepository.save(new ToDo("Work", false, false));
+        todoRepository.save(new ToDo("Practice", true, true));
+        todoRepository.save(new ToDo("Working out", true, false));
+        todoRepository.save(new ToDo("Clean", true, true));
     }
 }
