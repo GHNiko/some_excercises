@@ -2,6 +2,7 @@ package com.database.integration;
 
 import com.database.integration.models.ToDo;
 import com.database.integration.repository.ToDoRepository;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
@@ -12,6 +13,7 @@ public class IntegrationApplication implements CommandLineRunner {
     private
     ToDoRepository todoRepository;
 
+    @Autowired
     public IntegrationApplication(ToDoRepository todoRepository) {
         this.todoRepository = todoRepository;
     }
